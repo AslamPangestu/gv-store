@@ -1,6 +1,6 @@
 import React from 'react';
 
-const checkout = () => (
+const CheckoutPage = () => (
   <section className="checkout mx-auto pt-md-100 pb-md-145 pt-30 pb-30">
     <div className="container-fluid">
       <div className="logo text-md-center text-start pb-50">
@@ -145,4 +145,4 @@ const checkout = () => (
   </section>
 );
 
-export default checkout;
+export default CheckoutPage;
