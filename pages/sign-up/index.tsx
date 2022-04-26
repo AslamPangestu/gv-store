@@ -4,7 +4,13 @@ const SignUpPage = () => (
       <form action="">
         <div className="pb-50">
           <a className="navbar-brand" href="../index.html">
-            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg
+              width="60"
+              height="60"
+              viewBox="0 0 60 60"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <mask
                 id="mask0"
                 mask-type="alpha"
@@ -31,9 +37,16 @@ const SignUpPage = () => (
           </a>
         </div>
         <h2 className="text-4xl fw-bold color-palette-1 mb-10">Sign Up</h2>
-        <p className="text-lg color-palette-1 m-0">Daftar dan bergabung dengan kami</p>
+        <p className="text-lg color-palette-1 m-0">
+          Daftar dan bergabung dengan kami
+        </p>
         <div className="pt-50">
-          <label htmlFor="name" className="form-label text-lg fw-medium color-palette-1 mb-10">Full Name</label>
+          <label
+            htmlFor="name"
+            className="form-label text-lg fw-medium color-palette-1 mb-10"
+          >
+            Full Name
+          </label>
           <input
             type="text"
             className="form-control rounded-pill text-lg"
@@ -44,10 +57,11 @@ const SignUpPage = () => (
           />
         </div>
         <div className="pt-30">
-          <label htmlFor="email" className="form-label text-lg fw-medium color-palette-1 mb-10">
-            Email
-            Address
-
+          <label
+            htmlFor="email"
+            className="form-label text-lg fw-medium color-palette-1 mb-10"
+          >
+            Email Address
           </label>
           <input
             type="email"
@@ -59,7 +73,12 @@ const SignUpPage = () => (
           />
         </div>
         <div className="pt-30">
-          <label htmlFor="password" className="form-label text-lg fw-medium color-palette-1 mb-10">Password</label>
+          <label
+            htmlFor="password"
+            className="form-label text-lg fw-medium color-palette-1 mb-10"
+          >
+            Password
+          </label>
           <input
             type="password"
             className="form-control rounded-pill text-lg"
@@ -76,16 +95,13 @@ const SignUpPage = () => (
             role="button"
           >
             Continue
-
           </a>
           <a
             className="btn btn-sign-in fw-medium text-lg color-palette-1 rounded-pill"
             href="../src/sign-in.html"
             role="button"
           >
-            Sign
-            In
-
+            Sign In
           </a>
         </div>
       </form>
