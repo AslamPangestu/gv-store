@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 interface Props {
-  icon: 'step-1' | 'step-2' | 'step-3';
+  icon: string;
   title: string;
   description1: string;
   description2: string;
