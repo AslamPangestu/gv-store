@@ -1,7 +1,8 @@
+import 'aos/dist/aos.css';
 import 'styles/homepage.css';
 import 'styles/utilities.css';
 import 'styles/detail.css';
-import 'aos/dist/aos.css';
+import 'styles/checkout.css';
 
 import { useEffect } from 'react';
 import AOS from 'aos';
