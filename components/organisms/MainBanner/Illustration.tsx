@@ -3,7 +3,7 @@ import Image from 'next/image';
 const IllustrationMainBannerComponent = () => (
   <div className="d-flex justify-content-lg-end justify-content-center me-lg-5">
     <div className="position-relative" data-aos="zoom-in">
-      <Image
+      <img
         src="/img/Header-1.png"
         className="img-fluid"
         alt=""
@@ -36,7 +36,7 @@ const IllustrationMainBannerComponent = () => (
       </div>
       <div className="card right-card position-absolute border-0">
         <div className="position-relative d-flex flex-row justify-content-center mb-24">
-          <Image
+          <img
             src="/img/Header-3.png"
             className="rounded-pill"
             alt=""
