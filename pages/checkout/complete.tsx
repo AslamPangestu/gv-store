@@ -1,4 +1,6 @@
-const CheckoutCompletePage = () => (
+import type { NextPage } from 'next';
+
+const CheckoutCompletePage: NextPage = () => (
   <section className="complete-checkout mx-auto pt-lg-145 pb-lg-145 pt-100 pb-80">
     <div className="container-fluid">
       <div className="text-center">

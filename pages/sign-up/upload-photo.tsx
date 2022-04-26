@@ -1,4 +1,6 @@
-const SignUpUploadPhotoPage = () => (
+import type { NextPage } from 'next';
+
+const SignUpUploadPhotoPage: NextPage = () => (
   <section className="sign-up-photo mx-auto pt-lg-227 pb-lg-227 pt-130 pb-50">
     <div className="container mx-auto">
       <form action="">

@@ -1,4 +1,6 @@
-const MemberSettingPage = () => (
+import type { NextPage } from 'next';
+
+const MemberSettingPage: NextPage = () => (
   <section className="edit-profile overflow-auto">
     <section className="sidebar">
       <div className="content pt-50 pb-30 ps-30">

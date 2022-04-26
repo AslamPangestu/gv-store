@@ -1,6 +1,6 @@
-import React from 'react';
+import type { NextPage } from 'next';
 
-const CheckoutPage = () => (
+const CheckoutPage: NextPage = () => (
   <section className="checkout mx-auto pt-md-100 pb-md-145 pt-30 pb-30">
     <div className="container-fluid">
       <div className="logo text-md-center text-start pb-50">

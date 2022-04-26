@@ -1,4 +1,6 @@
-const SignUpSuccessPage = () => (
+import type { NextPage } from 'next';
+
+const SignUpSuccessPage: NextPage = () => (
   <section className="sign-up-success mx-auto pt-md-179 pb-md-179 pt-150 pb-100">
     <div className="container-fluid">
       <div className="text-center">

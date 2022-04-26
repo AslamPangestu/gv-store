@@ -1,4 +1,6 @@
-const MemberTransactionPage = () => (
+import type { NextPage } from 'next';
+
+const MemberTransactionPage: NextPage = () => (
   <section className="transactions overflow-auto">
     <section className="sidebar">
       <div className="content pt-50 pb-30 ps-30">

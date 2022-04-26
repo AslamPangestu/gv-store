@@ -1,4 +1,6 @@
-const NotFoundPage = () => (
+import type { NextPage } from 'next';
+
+const NotFoundPage: NextPage = () => (
   <section className="not-found mx-auto pt-145 pb-md-212 pb-100">
     <div className="container-fluid">
       <div className="text-center">
