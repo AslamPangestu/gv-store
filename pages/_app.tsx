@@ -1,5 +1,6 @@
 import 'styles/homepage.css';
 import 'styles/utilities.css';
+import 'styles/detail.css';
 import 'aos/dist/aos.css';
 
 import { useEffect } from 'react';
