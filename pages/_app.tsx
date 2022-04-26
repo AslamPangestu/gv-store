@@ -1,5 +1,5 @@
-import '../styles/homepage.css';
-import '../styles/utilities.css';
+import 'styles/homepage.css';
+import 'styles/utilities.css';
 import 'aos/dist/aos.css';
 
 import { useEffect } from 'react';
