@@ -8,7 +8,12 @@ import ToggleMenu from './ToggleMenu';
 
 const NavbarComponent = () => {
   const router = useRouter();
-  const currentPath = router.asPath;
+  const currentPath = router.asPath.split('/')[1];
+
+  const isActive = (link: string) => {
+    const itemPath = link.split('/')[1];
+    return itemPath === currentPath;
+  };
 
   const MENUS = [
     { title: 'Home', href: '/' },
@@ -35,7 +40,7 @@ const NavbarComponent = () => {
                   key={item.title}
                   title={item.title}
                   href={item.href}
-                  isActive={currentPath === item.href}
+                  isActive={isActive(item.href)}
                 />
               ))}
               <Auth isLoggedIn />

@@ -6,11 +6,20 @@ import Footer from './Footer';
 
 const SidebarComponent = () => {
   const router = useRouter();
-  const currentPath = router.asPath;
+  const currentPath = router.asPath.split('/')[2];
+
+  const isActive = (link: string) => {
+    const itemPath = link.split('/')[2];
+    return itemPath === currentPath;
+  };
 
   const MENUS = [
     { title: 'Overview', icon: '/icon/overview.svg', href: '/member' },
-    { title: 'Transactions', icon: '/icon/bucket.svg', href: '/member/transactions' },
+    {
+      title: 'Transactions',
+      icon: '/icon/bucket.svg',
+      href: '/member/transactions',
+    },
     { title: 'Messages', icon: '/icon/chat.svg', href: '/member/messages' },
     { title: 'Card', icon: '/icon/card.svg', href: '/member/cards' },
     { title: 'Rewards', icon: '/icon/reward.svg', href: '/member/rewards' },
@@ -28,7 +37,7 @@ const SidebarComponent = () => {
               title={item.title}
               href={item.href}
               icon={item.icon}
-              isActive={currentPath === item.href}
+              isActive={isActive(item.href)}
             />
           ))}
         </div>
