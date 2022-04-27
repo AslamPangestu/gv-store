@@ -4,7 +4,7 @@ import MemberLayout from 'layouts/member';
 import SettingsContent from 'components/organisms/SettingsContent';
 
 const MemberSettingsPage: NextPage = () => (
-  <MemberLayout>
+  <MemberLayout id="edit-profile ">
     <SettingsContent />
   </MemberLayout>
 );

@@ -1,8 +1,10 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 import { capitlizeFirstWord } from 'utils/text';
 
 interface Props {
+  id: Number;
   image: string;
   title: string;
   category: string;
@@ -11,7 +13,8 @@ interface Props {
   status: string;
 }
 
-const TableRowOverviewContentComponent = ({
+const TableRowTransactionsContentComponent = ({
+  id,
   image,
   title,
   category,
@@ -19,7 +22,7 @@ const TableRowOverviewContentComponent = ({
   item,
   price,
 }: Props) => (
-  <tr className="align-middle">
+  <tr data-category={status} className="align-middle">
     <th scope="row">
       <div className="float-start me-3 mb-lg-0 mb-3">
         <Image src={image} height={60} width={80} />
@@ -47,7 +50,14 @@ const TableRowOverviewContentComponent = ({
         </p>
       </div>
     </td>
+    <td>
+      <Link href={`/member/transactions/${id}`} passHref>
+        <div className="btn btn-status rounded-pill text-sm">
+          Detail
+        </div>
+      </Link>
+    </td>
   </tr>
 );
 
-export default TableRowOverviewContentComponent;
+export default TableRowTransactionsContentComponent;

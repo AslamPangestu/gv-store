@@ -21,8 +21,12 @@
     position: relative;
 }
 
-.sidebar .menus .item.active a,
-.sidebar .menus .item:hover a{
+.sidebar .menus .item.active span{
+    cursor: default;
+}
+
+.sidebar .menus .item.active span,
+.sidebar .menus .item:hover span{
     color: #0C145A;
     font-weight: 500;
 }
@@ -46,9 +50,10 @@
 }
 
 
-.sidebar .menus .item a{
+.sidebar .menus .item span{
     color: #7E8CAC;
     transition: all 0.2s linear;
+    cursor: pointer;
 }
 
 .sidebar-footer .footer-card{

@@ -1,41 +1,14 @@
-import Category from './Category';
+import { useState } from 'react';
 import TableRow from './TableRow';
+import ButtonCategory from './ButtonCategory';
 
-const OverviewContentComponent = () => {
-  const CATEGORIES = [
-    {
-      icon: '/icon/pc-category.svg',
-      category: (
-        <>
-          Game
-          <br />
-          PC
-        </>
-      ),
-      totalSpent: 'Rp 18.000.500',
-    },
-    {
-      icon: '/icon/mobile-category.svg',
-      category: (
-        <>
-          Game
-          <br />
-          Mobile
-        </>
-      ),
-      totalSpent: 'Rp 18.000.500',
-    },
-    {
-      icon: '/icon/other-category.svg',
-      category: (
-        <>
-          Other
-          <br />
-          Categories
-        </>
-      ),
-      totalSpent: 'Rp 18.000.500',
-    },
+const TransactionContentComponent = () => {
+  const [filterBy, setFilterBy] = useState('*');
+  const STATUSES = [
+    { label: 'All Trx', value: '*' },
+    { label: 'Success', value: 'success' },
+    { label: 'Pending', value: 'pending' },
+    { label: 'Failed', value: 'failed' },
   ];
   const ITEMS = [
     {
@@ -77,30 +50,26 @@ const OverviewContentComponent = () => {
   ];
   return (
     <div className="ps-lg-0">
-      <h2 className="text-4xl fw-bold color-palette-1 mb-30">Overview</h2>
-
-      <div className="top-up-categories mb-30">
-        <p className="text-lg fw-medium color-palette-1 mb-14">
-          Top Up Categories
-        </p>
-        <div className="main-content">
-          <div className="row">
-            {CATEGORIES.map((item) => (
-              <div
-                key={item.icon}
-                className="col-lg-4 ps-15 pe-15 pb-lg-0 pb-4"
-              >
-                <Category
-                  icon={item.icon}
-                  category={item.category}
-                  totalSpent={item.totalSpent}
-                />
-              </div>
+      <h2 className="text-4xl fw-bold color-palette-1 mb-30">
+        My Transactions
+      </h2>
+      <div className="mb-30">
+        <p className="text-lg color-palette-2 mb-12">You’ve spent</p>
+        <h3 className="text-5xl fw-medium color-palette-1">Rp 4.518.000.500</h3>
+      </div>
+      <div className="row mt-30 mb-20">
+        <div className="col-lg-12 col-12 main-content">
+          <div id="list_status_title">
+            {STATUSES.map((item) => (
+              <ButtonCategory
+                title={item.label}
+                status={item.value}
+                isActive={filterBy === item.value}
+              />
             ))}
           </div>
         </div>
       </div>
-
       <div className="latest-transaction">
         <p className="text-lg fw-medium color-palette-1 mb-14">
           Latest Transactions
@@ -109,18 +78,20 @@ const OverviewContentComponent = () => {
           <table className="table table-borderless">
             <thead>
               <tr className="color-palette-1">
-                <th className="text-start" scope="col">
+                <th className="" scope="col">
                   Game
                 </th>
                 <th scope="col">Item</th>
                 <th scope="col">Price</th>
                 <th scope="col">Status</th>
+                <th scope="col">Action</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody id="list_status_item">
               {ITEMS.map((item) => (
                 <TableRow
                   key={item.id}
+                  id={item.id}
                   category={item.category}
                   image={item.image}
                   item={item.item}
@@ -137,4 +108,4 @@ const OverviewContentComponent = () => {
   );
 };
 
-export default OverviewContentComponent;
+export default TransactionContentComponent;

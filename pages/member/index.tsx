@@ -4,7 +4,7 @@ import MemberLayout from 'layouts/member';
 import OverviewContent from 'components/organisms/OverviewContent';
 
 const MemberIndexPage: NextPage = () => (
-  <MemberLayout>
+  <MemberLayout id="overview">
     <OverviewContent />
   </MemberLayout>
 );
