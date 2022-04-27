@@ -30,11 +30,11 @@
     cursor: pointer;
 }
 
-.edit-profile .image-upload label{
+.edit-profile .image-upload > label{
     cursor: pointer;
 }
 
-.edit-profile .image-upload  input {
+.edit-profile .image-upload > input {
     visibility: hidden;
     width: 0;
     height: 0;

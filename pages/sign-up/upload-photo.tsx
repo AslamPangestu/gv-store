@@ -21,7 +21,6 @@ const SignUpUploadPhotoPage: NextPage = () => (
               <label htmlFor="category" className="form-label text-lg fw-medium color-palette-1 mb-10">
                 Favorite
                 Game
-
               </label>
               <select
                 id="category"
@@ -45,16 +44,13 @@ const SignUpUploadPhotoPage: NextPage = () => (
               role="button"
             >
               Create My Account
-
             </a>
             <a
               className="btn btn-tnc text-lg color-palette-1 text-decoration-underline pt-15"
               href="#"
               role="button"
             >
-              Terms &
-              Conditions
-
+              Terms & Conditions
             </a>
           </div>
         </div>
