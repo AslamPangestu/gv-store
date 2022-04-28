@@ -1,23 +1,12 @@
 import Image from 'next/image';
 
+import InputText from 'components/atoms/InputText';
+
 const TopUpFormComponent = () => (
   <form action="./checkout.html" method="POST">
     <div className="pt-md-50 pt-30">
       <div className="">
-        <label
-          htmlFor="ID"
-          className="form-label text-lg fw-medium color-palette-1 mb-10"
-        >
-          Verify ID
-        </label>
-        <input
-          type="text"
-          className="form-control rounded-pill text-lg"
-          id="ID"
-          name="ID"
-          aria-describedby="verifyID"
-          placeholder="Enter your ID"
-        />
+        <InputText type="text" label="Verify ID" name="id" placeholder="Enter your ID" />
       </div>
     </div>
     <div className="pt-md-50 pb-md-50 pt-30 pb-20">

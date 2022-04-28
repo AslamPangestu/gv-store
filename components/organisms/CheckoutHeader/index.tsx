@@ -1,5 +1,4 @@
 const CheckoutHeaderComponent = () => (
-
   <div className="game-checkout d-flex flex-row align-items-center pt-md-50 pb-md-50 pt-30 pb-30">
     <div className="pe-4">
       <div className="cropped">

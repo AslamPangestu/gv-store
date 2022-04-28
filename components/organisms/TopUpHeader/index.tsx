@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 interface Props {
   deviceType: 'desktop' | 'mobile';
 }
@@ -18,7 +20,7 @@ const TopUpHeaderComponent = ({ deviceType }:Props) => {
   return (
     <div className="row align-items-center">
       <div className="col-md-12 col-4">
-        <img
+        <Image
           src="/img/Thumbnail-3.png"
           width="280"
           height="380"

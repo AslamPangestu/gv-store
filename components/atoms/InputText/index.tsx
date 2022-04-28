@@ -2,7 +2,7 @@ interface Props {
   label: string;
   name: string;
   placeholder: string;
-  type:'text' | 'email' | 'tel'
+  type:'text' | 'email' | 'tel' | 'password'
 }
 
 const InputTextComponent = ({
