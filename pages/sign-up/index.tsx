@@ -1,7 +1,6 @@
 import type { NextPage } from 'next';
-import Image from 'next/image';
-import Link from 'next/link';
 
+import Brand from 'components/atoms/Brand';
 import SignUpform from 'components/organisms/SignUpform';
 
 const SignUpPage: NextPage = () => (
@@ -9,11 +8,7 @@ const SignUpPage: NextPage = () => (
     <div className="container mx-auto">
       <form action="">
         <div className="pb-50">
-          <Link href="/" passHref>
-            <a className="navbar-brand" href="dummy">
-              <Image src="/icon/logo.svg" width={60} height={60} />
-            </a>
-          </Link>
+          <Brand />
         </div>
         <SignUpform />
       </form>

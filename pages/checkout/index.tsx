@@ -1,7 +1,6 @@
 import type { NextPage } from 'next';
-import Image from 'next/image';
-import Link from 'next/link';
 
+import Brand from 'components/atoms/Brand';
 import CheckoutHeader from 'components/organisms/CheckoutHeader';
 import CheckoutDetail from 'components/organisms/CheckoutDetail';
 import CheckoutConfirmation from 'components/organisms/CheckoutConfirmation';
@@ -10,11 +9,7 @@ const CheckoutPage: NextPage = () => (
   <section className="checkout mx-auto pt-md-100 pb-md-145 pt-30 pb-30">
     <div className="container-fluid">
       <div className="logo text-md-center text-start pb-50">
-        <Link href="/" passHref>
-          <a className="navbar-brand" href="dummy">
-            <Image src="/icon/logo.svg" width={60} height={60} />
-          </a>
-        </Link>
+        <Brand />
       </div>
       <div className="title-text pt-md-50 pt-0">
         <h2 className="text-4xl fw-bold color-palette-1 mb-10">Checkout</h2>

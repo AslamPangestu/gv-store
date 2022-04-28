@@ -1,16 +1,11 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Brand from 'components/atoms/Brand';
 
 const FooterComponent = () => (
   <footer className="footer pt-50">
     <div className="container-fluid">
       <div className="row">
         <div className="col-lg-4 text-lg-start text-center">
-          <Link href="/" passHref>
-            <a className="navbar-brand" href="dummy">
-              <Image src="/icon/logo.svg" width={60} height={60} />
-            </a>
-          </Link>
+          <Brand />
           <p className="mt-30 text-lg color-palette-1 mb-30">
             StoreGG membantu gamers
             <br />

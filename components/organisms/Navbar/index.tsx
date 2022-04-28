@@ -1,7 +1,6 @@
-import Image from 'next/image';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
 
+import Brand from 'components/atoms/Brand';
 import Menu from './Menu';
 import Auth from './Auth';
 import ToggleMenu from './ToggleMenu';
@@ -27,11 +26,7 @@ const NavbarComponent = () => {
     <header>
       <div className="navbar navbar-expand-lg navbar-light bg-light bg-white pt-lg-40 pb-lg-40 pt-30 pb-50">
         <div className="container-fluid">
-          <Link href="/" passHref>
-            <a className="navbar-brand" href="dummy">
-              <Image src="/icon/logo.svg" width={60} height={60} />
-            </a>
-          </Link>
+          <Brand />
           <ToggleMenu />
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto text-lg gap-lg-0 gap-2">
