@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-interface Props {
+export interface Props {
   id:Number;
   title: string;
   category: string;
@@ -18,9 +18,8 @@ const GameItemComponent = ({
           <Image
             className="thumbnail"
             src={thumbnail}
-            width={205}
-            height={270}
-            alt=""
+            width="205"
+            height="270"
           />
         </div>
         <div className="cover position-absolute bottom-0 m-32">
