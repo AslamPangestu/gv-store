@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 
 import Brand from 'components/atoms/Brand';
-import SignUpform from 'components/organisms/SignUpform';
+import SignUpForm from 'components/organisms/SignUpForm';
 
 const SignUpPage: NextPage = () => (
   <section className="sign-up mx-auto pt-lg-100 pb-lg-100 pt-30 pb-47">
@@ -10,7 +10,7 @@ const SignUpPage: NextPage = () => (
         <div className="pb-50">
           <Brand />
         </div>
-        <SignUpform />
+        <SignUpForm />
       </form>
     </div>
   </section>
